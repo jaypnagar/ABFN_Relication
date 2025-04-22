@@ -102,7 +102,7 @@ Some raw datasets are proprietary or too large for GitHub. Below are required in
 
 ### A2
 - `ret_patents.dta` (from SAS + `patentawards.xlsx`)
-- `VertInteg.txt` (Hoberg-Phillips)
+- `VertInteg.txt` (Hoberg-Phillips vertical relatedness data library)
 
 ---
 
