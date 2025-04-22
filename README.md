@@ -98,7 +98,7 @@ Some raw datasets are proprietary or too large for GitHub. Below are required in
 - `g_ipc_at_issue.tsv` (USPTO IPC)
 - `202401_OECD_PATENT_QUALITY_USPTO_INDIC.txt` (OECD indicators)
 - `CPIAUCSL.csv` (CPI data)
-- `patent_invt_indicator.csv` (generated via Python)
+- `patent_invt_indicator.csv` (generated via Python: To run Python code, EPO Patstat data is required)
 
 ### A2
 - `ret_patents.dta` (from SAS + `patentawards.xlsx`)
