@@ -1,0 +1,23 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{6}{c}}
+\hline\hline
+                    &\multicolumn{2}{c}{KPSS Estimates}&\multicolumn{2}{c}{Forein and Domestic Patent day}&\multicolumn{2}{c}{Modified estimates on Mixed patent day }\\\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   &\multicolumn{1}{c}{(5)}   &\multicolumn{1}{c}{(6)}   \\
+\hline
+Pat Foreign Invt (All Non-USA)&      -0.025***&      -0.008***&      -0.071***&      -0.055***&      -0.157***&      -0.140***\\
+                    &     (0.002)   &     (0.002)   &     (0.002)   &     (0.002)   &     (0.002)   &     (0.002)   \\
+Log (Market cap (const. usd))&               &       0.751***&               &       0.745***&               &       0.751***\\
+                    &               &     (0.001)   &               &     (0.001)   &               &     (0.001)   \\
+Constant            &      15.823***&      -1.404***&      15.781***&      -1.313***&      15.839***&      -1.382***\\
+                    &     (0.001)   &     (0.028)   &     (0.001)   &     (0.029)   &     (0.001)   &     (0.028)   \\
+\hline
+Avg DV              &      15.820   &      15.820   &      15.773   &      15.773   &      15.822   &      15.822   \\
+Year Fixed Effects  &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   \\
+4-digit IPC Fixed Effects&         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   \\
+Firm Fixed Effects  &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   \\
+R^2                 &       0.680   &       0.778   &       0.676   &       0.771   &       0.682   &       0.779   \\
+N                   &   1,443,251   &   1,443,251   &   1,443,251   &   1,443,251   &   1,443,251   &   1,443,251   \\
+\hline\hline
+\end{tabular}
+}

@@ -1,0 +1,23 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{6}{c}}
+\hline\hline
+                    &\multicolumn{3}{c}{KPSS Estimates}             &\multicolumn{3}{c}{Vetical Intgration }        \\\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   &\multicolumn{1}{c}{(5)}   &\multicolumn{1}{c}{(6)}   \\
+\hline
+pat: firm ver. Intg. (topq): High&       0.170***&       0.050***&       0.006***&       0.403***&       0.282***&       0.130***\\
+                    &     (0.003)   &     (0.002)   &     (0.002)   &     (0.003)   &     (0.002)   &     (0.002)   \\
+Log (Market cap (const. usd))&               &       0.383***&       0.728***&               &       0.385***&       0.748***\\
+                    &               &     (0.000)   &     (0.001)   &               &     (0.000)   &     (0.001)   \\
+Constant            &      15.891***&       7.089***&      -0.867***&      15.885***&       7.028***&      -1.300***\\
+                    &     (0.001)   &     (0.010)   &     (0.030)   &     (0.001)   &     (0.010)   &     (0.031)   \\
+\hline
+Avg DV              &      15.939   &      15.939   &      15.940   &      16.000   &      16.000   &      16.001   \\
+Year Fixed Effects  &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   \\
+4-digit IPC Fixed Effects&         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   \\
+Firm Fixed Effects  &          No   &          No   &         Yes   &          No   &          No   &         Yes   \\
+R^2                 &       0.143   &       0.467   &       0.786   &       0.161   &       0.476   &       0.785   \\
+N                   &   1,294,402   &   1,294,402   &   1,293,900   &   1,294,402   &   1,294,402   &   1,293,900   \\
+\hline\hline
+\end{tabular}
+}

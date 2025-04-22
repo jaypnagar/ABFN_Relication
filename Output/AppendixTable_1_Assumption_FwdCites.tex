@@ -1,0 +1,23 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{12}{c}}
+\hline\hline
+                    &\multicolumn{7}{c}{Log(1+Fwd citations)}                                                                       &\multicolumn{5}{c}{Breakthrough}                                               \\\cmidrule(lr){2-8}\cmidrule(lr){9-13}
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   &\multicolumn{1}{c}{(5)}   &\multicolumn{1}{c}{(6)}   &\multicolumn{1}{c}{(7)}   &\multicolumn{1}{c}{(8)}   &\multicolumn{1}{c}{(9)}   &\multicolumn{1}{c}{(10)}   &\multicolumn{1}{c}{(11)}   &\multicolumn{1}{c}{(12)}   \\
+\hline
+Log (Pat val KPSS (const. usd))&               &       0.053***&               &               &       0.083***&               &               &       0.059***&               &               &       0.149***&               \\
+                    &               &     (0.001)   &               &               &     (0.001)   &               &               &     (0.008)   &               &               &     (0.013)   &               \\
+lpatvalue\_kogan\_assum2&               &               &       0.011***&               &               &       0.103***&               &               &      -0.079***&               &               &       0.166***\\
+                    &               &               &     (0.001)   &               &               &     (0.001)   &               &               &     (0.008)   &               &               &     (0.016)   \\
+Constant            &       1.826***&       0.981***&       1.648***&       1.826***&       0.512***&       0.154***&       1.283***&       0.357***&       2.574***&       1.283***&      -1.073***&      -1.413***\\
+                    &     (0.001)   &     (0.013)   &     (0.012)   &     (0.001)   &     (0.019)   &     (0.024)   &     (0.009)   &     (0.133)   &     (0.133)   &     (0.009)   &     (0.207)   &     (0.262)   \\
+\hline
+Avg of DV           &       1.826   &       1.826   &       1.826   &       1.826   &       1.826   &       1.826   &       1.283   &       1.283   &       1.283   &       1.283   &       1.283   &       1.283   \\
+Year Fixed Effects  &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   \\
+4-digit IPC Fixed Effects&         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   \\
+Firm Fixed Effects  &          No   &          No   &          No   &         Yes   &         Yes   &         Yes   &          No   &          No   &          No   &         Yes   &         Yes   &         Yes   \\
+R^2                 &      0.1317   &      0.1345   &      0.1318   &      0.2080   &      0.2105   &      0.2105   &      0.0052   &      0.0052   &      0.0053   &      0.0418   &      0.0419   &      0.0419   \\
+N                   &   1,443,877   &   1,443,866   &   1,443,866   &   1,443,262   &   1,443,251   &   1,443,251   &   1,443,877   &   1,443,866   &   1,443,866   &   1,443,262   &   1,443,251   &   1,443,251   \\
+\hline\hline
+\end{tabular}
+}
