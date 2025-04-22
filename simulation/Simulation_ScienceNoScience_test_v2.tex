@@ -1,0 +1,20 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{6}{c}}
+\hline\hline
+                    &\multicolumn{2}{c}{Simulated Data}&\multicolumn{2}{c}{One distribution}&\multicolumn{2}{c}{Two distribution}\\\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   &\multicolumn{1}{c}{(5)}   &\multicolumn{1}{c}{(6)}   \\
+\hline
+Science Patent Dummy&       0.040***&       0.040***&       0.001***&       0.001***&       0.045***&       0.045***\\
+                    &     (0.000)   &     (0.000)   &     (0.000)   &     (0.000)   &     (0.000)   &     (0.000)   \\
+Constant            &       0.399***&       0.399***&       0.413***&       0.413***&       0.395***&       0.395***\\
+                    &     (0.000)   &     (0.000)   &     (0.000)   &     (0.000)   &     (0.000)   &     (0.000)   \\
+\hline
+Year Fixed Effects  &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   &         Yes   \\
+Firm Fixed Effects  &          No   &         Yes   &          No   &         Yes   &          No   &         Yes   \\
+R^2                 &       0.002   &       0.303   &       0.000   &       0.960   &       0.008   &       0.957   \\
+N                   &  18,247,117   &  18,247,117   &  18,247,117   &  18,247,117   &  18,247,117   &  18,247,117   \\
+Mean DV             &       0.415   &       0.415   &       0.413   &       0.413   &       0.413   &       0.413   \\
+\hline\hline
+\end{tabular}
+}
