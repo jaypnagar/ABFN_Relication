@@ -1,5 +1,4 @@
 # Create the README.md content based on the user's description
-readme_content = """
 # Replication Package  
 **Revisiting Stock Market Signals as a Lens for Patent Valuation**  
 *Ashish Arora, Sharon Belenzon, Elia Ferracuti, Jay Prakash Nagar*
