@@ -42,9 +42,9 @@ ABF_Replication/
 ## Getting Started
 
 ```stata
-cd "C:\Users\jayho\OneDrive - Duke University\ABF_Replication"
-gl OUT "C:\Users\jayho\OneDrive - Duke University\ABF_Replication\Output"
-gl IN  "C:\Users\jayho\OneDrive - Duke University\ABF_Replication\Data"
+cd "~ABF_Replication"
+gl OUT "~\ABF_Replication\Output"
+gl IN  "~\ABF_Replication\Data"
 clear all
 ```
 
@@ -152,13 +152,10 @@ Some datasets are proprietary or too large to be hosted on GitHub.
 
 - `g_ipc_at_issue.tsv`  
   (USPTO / PatentsView IPC data)
-
 - `202401_OECD_PATENT_QUALITY_USPTO_INDIC.txt`  
   (OECD Patent Quality Indicators)
-
 - `CPIAUCSL.csv`  
   (Consumer Price Index)
-
 - `patent_invt_indicator.csv`  
   (Generated via Python; requires EPO PATSTAT)
 
@@ -168,16 +165,12 @@ Some datasets are proprietary or too large to be hosted on GitHub.
 
 - `Renewal_Data.csv`  
   (Generated via Python; requires maintenance fee data)
-
 - `Trilateral_pat.csv`  
   (Generated via Python; requires EPO PATSTAT data)
-
 - `assignment_conveyance.csv`  
   (Patent reassignment data: `documentid_admin.dta` and `assignment_conveyance.dta`)
-
 - `patents_litigation.dta`  
   (Patent litigation data)
-
 ---
 
 ### Sample Construction (A2)
@@ -186,7 +179,7 @@ Some datasets are proprietary or too large to be hosted on GitHub.
   (Generated via SAS from `patentawards.xlsx`)
 
 - `VertInteg.txt`  
-  (Hoberg–Phillips vertical relatedness data)
+  (Hoberg–Phillips vertical relatedness data: https://faculty.marshall.usc.edu/Gerard-Hoberg/FresardHobergPhillipsDataSite/index.html)
 
 
 
