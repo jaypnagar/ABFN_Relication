@@ -15,7 +15,7 @@ using stock market reactions. The empirical framework allows for heterogeneity i
 signal-to-noise ratios across patents, capturing differences related to inventor
 teams, foreign inventorship, science linkage, and vertical integration.
 
-Some raw datasets are proprietary and therefore not redistributed.
+Some raw datasets are proprietary and therefore are not redistributed.
 
 ---
 
@@ -41,20 +41,10 @@ ABF_Replication/
 
 ## Getting Started
 
-Set the working directory and global paths in Stata:
-
 ```stata
-/* Set working directory */
-
-/* Elia */
-/* cd "C:\Users\ef122\Duke University\Jay Prakash Nagar - ABF_PatValue_Research" */
-
-/* Jay */
 cd "C:\Users\jayho\OneDrive - Duke University\ABF_Replication"
-
 gl OUT "C:\Users\jayho\OneDrive - Duke University\ABF_Replication\Output"
 gl IN  "C:\Users\jayho\OneDrive - Duke University\ABF_Replication\Data"
-
 clear all
 ```
 
@@ -79,8 +69,17 @@ Output:
 do "code/A1_patent_indicator_construction_variable.do"
 ```
 
-Additionally, run the Python notebook:
-- code/A0_PatentLevelIndicator_TeamForeignInvt.ipynb
+#### Python Preprocessing Notebooks
+
+- `code/A0_PatentLevelIndicator_TeamForeignInvt.ipynb`  
+  Data source: https://www.epo.org/en/searching-for-patents/business/patstat
+
+- `code/A0_Renew_FullTerm_MaintFeeEvents.ipynb`  
+  Data source: https://www.google.com/googlebooks/uspto-patents-maintenance-fees.html
+
+Additional data sources:
+- Patent litigation data: https://www.uspto.gov/ip-policy/economic-research/research-datasets/patent-litigation-docket-reports-data
+- Patent reassignment data: https://www.uspto.gov/ip-policy/economic-research/research-datasets/patent-assignment-dataset
 
 ---
 
@@ -103,6 +102,8 @@ do "code/A3_Kpss_Estimation_TeamSize.do"
 do "code/A3_Kpss_Estimation_VerticalInteg.do"
 do "code/Appendix_A3_Do_Analyses_KPSS_NewAssumption.do"
 ```
+To generate the **generalized KPSS estimates** when both types of patents are granted on the same day (i.e., science-based vs. non-science-based patents), we use the Python script `py_A3_Kpss_Estimation_SciNoSci.py`, which is called from within the corresponding Stata `.do` file.
+
 
 ---
 
@@ -123,33 +124,81 @@ do "code/A9_KPSSasIndepVar_standarized_bootstrap.do"
 
 Some datasets are proprietary or too large to be hosted on GitHub.
 
+---
+
 ### Citation Merge (A0)
-- patents_1980_2021_UO.dta (DISCERN)
-- _pcs_mag_doi_pmid.tsv (Reliance on Science)
 
-### Patent-Level Indicators (A1)
-- g_ipc_at_issue.tsv (USPTO / PatentsView IPC data)
-- 202401_OECD_PATENT_QUALITY_USPTO_INDIC.txt (OECD)
-- CPIAUCSL.csv (Consumer Price Index)
-- patent_invt_indicator.csv (generated via Python; requires EPO PATSTAT)
+- `patents_1980_2021_UO.dta`  
+  (DISCERN)
 
-### Sample Construction (A2)
-- ret_patents.dta (generated via SAS from patentawards.xlsx)
-- VertInteg.txt (Hoberg–Phillips vertical relatedness data)
+- `_pcs_mag_doi_pmid.tsv`  
+  (Reliance on Science)
+
+- `A0_PatentLevelIndicator_TeamForeignInvt.ipynb`
+
+- `tls201_appln.parquet`  
+- `tls207_pers_appln.parquet`  
+- `tls206_person.parquet`
+
+- `MaintFeeEvents_20240729`  
+  (Maintenance fee data)
+
+- `tls201_appln.parquet`  
+  (EPO PATSTAT data for Trilateral Patent)
 
 ---
+
+### Patent-Level Indicators (A1)
+
+- `g_ipc_at_issue.tsv`  
+  (USPTO / PatentsView IPC data)
+
+- `202401_OECD_PATENT_QUALITY_USPTO_INDIC.txt`  
+  (OECD Patent Quality Indicators)
+
+- `CPIAUCSL.csv`  
+  (Consumer Price Index)
+
+- `patent_invt_indicator.csv`  
+  (Generated via Python; requires EPO PATSTAT)
+
+---
+
+### A1_patent_indicator_construction_variable_Additional
+
+- `Renewal_Data.csv`  
+  (Generated via Python; requires maintenance fee data)
+
+- `Trilateral_pat.csv`  
+  (Generated via Python; requires EPO PATSTAT data)
+
+- `assignment_conveyance.csv`  
+  (Patent reassignment data: `documentid_admin.dta` and `assignment_conveyance.dta`)
+
+- `patents_litigation.dta`  
+  (Patent litigation data)
+
+---
+
+### Sample Construction (A2)
+
+- `ret_patents.dta`  
+  (Generated via SAS from `patentawards.xlsx`)
+
+- `VertInteg.txt`  
+  (Hoberg–Phillips vertical relatedness data)
+
+
 
 ## Notes
 
 - All output files are written to the output/ directory.
 - File paths may need to be adjusted depending on the local system.
-- Results are reproducible conditional on access to the proprietary datasets.
+- Results are reproducible conditional on access to proprietary datasets.
 
 ---
 
 ## Citation
-
-If you use this code or data structure, please cite:
 
 Arora, A., Belenzon, S., Ferracuti, E., and Nagar, J. P.
 Revisiting Stock Market Signals as a Lens for Patent Valuation.
